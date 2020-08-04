@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    android:elevation="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_actionbarTodoList"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageButton
+            android:id="@+id/ib_back_actionbarTodoList"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:src="@drawable/ic_back"
+            android:tint="@color/colorIcon"
+            android:background="@color/colorBackground"/>
+
+        <ImageButton
+            android:id="@+id/ib_add_actionbarTodoList"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:src="@drawable/ic_add"
+            android:tint="@color/colorIcon"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorBackground"/>
+        <ImageView
+            android:id="@+id/iv_add_actionbarTodoList"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:src="@drawable/ic_add"
+            android:tint="@color/colorIcon"
+            android:layout_toStartOf="@+id/ib_add_actionbarTodoList"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top_actionbarTodoList"
+        android:padding="2dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toStartOf="@+id/tv_filterText_actionbarTodoList"
+            android:src="@drawable/ic_test_filter"
+            android:tint="@color/colorIcon"/>
+        <TextView
+            android:id="@+id/tv_filterText_actionbarTodoList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingHorizontal="5dp"
+            android:text="This Is The Filter"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow_drop_down_24"
+            android:tint="@color/colorIcon"
+            android:layout_toEndOf="@+id/tv_filterText_actionbarTodoList"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

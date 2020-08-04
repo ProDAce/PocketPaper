@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TodoItemList"
+    android:background="@color/colorBackground">
+
+
+    <include android:id="@+id/toolbar_todo_item_list"
+        layout="@layout/actionbar_todo_item_list"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_title_todoItemList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_todo_item_list">
+
+        <ImageView
+            android:id="@+id/iv_color_todoItemList"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:src="@drawable/ic_circle"
+            android:padding="10dp"
+            android:layout_alignParentStart="true"/>
+
+        <ImageView
+            android:id="@+id/iv_edit_todoItemList"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:src="@drawable/ic_edit"
+            android:tint="@color/colorIcon"
+            android:padding="10dp"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/tv_title_todoItemList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="4dp"
+            android:textSize="24sp"
+            android:textColor="@color/colorText"
+            android:hint="Title"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/iv_color_todoItemList"
+            android:layout_toStartOf="@id/iv_edit_todoItemList" />
+
+        <ImageView
+            android:id="@+id/iv_done_todoItemList"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:src="@drawable/ic_check"
+            android:padding="10dp"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/et_title_todoItemList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="4dp"
+            android:textSize="24sp"
+            android:hint="Title"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/iv_color_todoItemList"
+            android:layout_toStartOf="@id/iv_done_todoItemList"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <include android:id="@+id/colorGroup_todo_item_list"
+        layout="@layout/popup_color_group"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/rl_title_todoItemList"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_todoItemList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title_todoItemList"/>
+    <Button
+        android:id="@+id/btn_addItem_todoItemList"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Add"
+        android:layout_below="@+id/rv_todoItemList"
+        android:visibility="gone"/>
+
+</RelativeLayout>

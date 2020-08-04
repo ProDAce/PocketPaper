@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:elevation="10dp"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp">
+
+        <ImageView
+            android:id="@+id/iv_null_popupColorGroup"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_circle_group_null"/>
+
+        <ImageView
+            android:id="@+id/iv_red_popupColorGroup"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_circle_group_red" />
+
+        <ImageView
+            android:id="@+id/iv_green_popupColorGroup"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_circle_group_green" />
+
+        <ImageView
+            android:id="@+id/iv_blue_popupColorGroup"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_circle_group_blue" />
+
+        <ImageView
+            android:id="@+id/iv_yellow_popupColorGroup"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_circle_group_yellow" />
+
+        <ImageView
+            android:id="@+id/iv_magenta_popupColorGroup"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_circle_group_magenta"/>
+
+
+        <ImageView
+            android:id="@+id/iv_cyan_popupColorGroup"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_circle_group_cyan"/>
+
+    </LinearLayout>
+
+</HorizontalScrollView>
